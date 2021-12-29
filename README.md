@@ -1,12 +1,12 @@
-#Описание проекта
+# Описание проекта
 Yatube API позволяет запросить, отправить или изменить данные на сервере Yatube.
 Для аутентификации нужно получить JWT-токен.
 
-#Установка
+# Установка
 
 1. Клонируйте репозиторий:
 
-git clone https://github.com/yandex-praktikum/kittygram.git
+git clone https://github.com/yandex-praktikum/api_final_yatube.git
 
 2. Cоздайте и активируйте виртуальное окружение:
 
@@ -26,7 +26,7 @@ python3 manage.py migrate
 
 python3 manage.py runserver
 
-#Некоторые примеры запросов к API
+# Некоторые примеры запросов к API
 
 **Пример POST-запроса с токеном Антона Чехова: добавление нового поста.**
 POST .../api/v1/posts/
