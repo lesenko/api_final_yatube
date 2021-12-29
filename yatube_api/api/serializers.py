@@ -27,6 +27,7 @@ class CommentSerializer(serializers.ModelSerializer):
         fields = '__all__'
         model = Comment
 
+
 class GroupSerializer(serializers.ModelSerializer):
 
     class Meta:

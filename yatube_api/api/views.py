@@ -24,7 +24,7 @@ class PostViewSet(viewsets.ModelViewSet):
     def get_permissions(self):
         if self.action == 'retrieve':
             return (ReadOnly(),)
-        return super().get_permissions() 
+        return super().get_permissions()
 
     def perform_create(self, serializer):
         serializer.save(author=self.request.user)
@@ -43,7 +43,7 @@ class CommentViewSet(viewsets.ModelViewSet):
     def get_permissions(self):
         if self.action == 'retrieve':
             return (ReadOnly(),)
-        return super().get_permissions() 
+        return super().get_permissions()
 
     def get_queryset(self):
         post_id = self.kwargs.get("post_id")
