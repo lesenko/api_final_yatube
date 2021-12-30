@@ -1,5 +1,4 @@
 from django.urls import include, path
-
 from rest_framework import routers
 from rest_framework_simplejwt.views import (TokenObtainPairView,
                                             TokenRefreshView,
@@ -15,7 +14,7 @@ router.register(
     CommentViewSet,
     basename='comment'
 )
-router.register(r'follow', FollowViewSet)
+router.register(r'follow', FollowViewSet, basename='follow')
 
 urlpatterns = [
     path('v1/', include(router.urls)),
